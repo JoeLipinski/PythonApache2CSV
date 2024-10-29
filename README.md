@@ -1,5 +1,5 @@
 # PythonApache2CSV
-`parse_apache_log.py` is a Python script designed to parse Apache log files in both Common Log Format (CLF) and Combined Log Format (which includes User-Agent and Referrer details). The script processes the log file and outputs the data in a well-structured CSV file. This parser is flexible, handling different Apache log formats and providing meaningful defaults for missing data.
+PythonApache2CSV is a Python script designed to parse Apache log files in both Common Log Format (CLF) and Combined Log Format (which includes User-Agent and Referrer details). The script processes the log file and outputs the data in a well-structured CSV file. This parser is flexible, handling different Apache log formats and providing meaningful defaults for missing data.
 
 ## Features
 - Parses both Common Log Format (CLF) and Combined Log Format
@@ -22,19 +22,12 @@ pip install pandas
 To run the script, use the following syntax:
 
 ```bash
-python parse_apache_log.py <input_file> <output_file>
+python apache2csv.py <input_file> <output_file>
 ```
 
 ### Arguments
 - `<input_file>`: Path to the Apache log file you want to parse.
 - `<output_file>`: Path where the resulting CSV file will be saved.
-
-### Example
-If you have an Apache log file at `logs/access.log` and want to save the parsed output to `output/parsed_logs.csv`, run:
-
-```bash
-python parse_apache_log.py logs/access.log output/parsed_logs.csv
-```
 
 ## CSV Output
 The resulting CSV file will have the following columns:
@@ -81,4 +74,3 @@ This project is open-source and available under the MIT License.
 
 ## Contributions
 Feel free to submit issues or pull requests. Contributions are welcome!
-```
